@@ -7,12 +7,12 @@ class StudentInfoCard extends StatelessWidget {
   const StudentInfoCard(
       {Key? key,
       required this.title,
-      required this.svgSrc,
       required this.percent_of_students,
       required this.no_of_quizzes})
       : super(key: key);
 
-  final String title, svgSrc, percent_of_students;
+  final String title, percent_of_students;
+
   final int no_of_quizzes;
 
   @override
@@ -30,7 +30,7 @@ class StudentInfoCard extends StatelessWidget {
           SizedBox(
             height:20,
             width:20,
-          child:SvgPicture.asset(svgSrc),
+          child:SvgPicture.asset("assets/images/logo.png"),
           ),
           Expanded(
             child:Padding(

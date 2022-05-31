@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../../constants.dart';
 import 'chart.dart';
@@ -30,25 +31,25 @@ class StudentDetails extends StatelessWidget {
           SizedBox(height: defaultPadding),
           Chart(),
           StudentInfoCard(
-            svgSrc: "assets/icons/user.svg",
+            //SvgPicture.asset("assets/images/logo.png"),
             title: "5-7 years",
             percent_of_students: "13%",
             no_of_quizzes: 1328,
           ),
           StudentInfoCard(
-            svgSrc: "assets/icons/user.svg",
+            //svgSrc: "assets/images/logo.png",
             title: "8-10 years",
             percent_of_students: "80%",
             no_of_quizzes: 1328,
           ),
           StudentInfoCard(
-            svgSrc: "assets/icons/user.svg",
+            //svgSrc:"assets/images/logo.png",
             title: "11-13 years",
             percent_of_students: "34%",
             no_of_quizzes: 1328,
           ),
           StudentInfoCard(
-            svgSrc: "assets/icons/user.svg",
+            //svgSrc:"assets/images/logo.png" ,
             title: "14-16 years",
             percent_of_students: "12%",
             no_of_quizzes: 140,

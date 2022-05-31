@@ -31,7 +31,7 @@ class InfoCard extends StatelessWidget {
                           color: Color.fromARGB(255, 255, 255, 255).withOpacity(0.1),
                           borderRadius:
                               const BorderRadius.all(Radius.circular(10))),
-                      child: SvgPicture.asset("/assets/images/logo.png")),
+                      child: SvgPicture.asset("assets/icons/user.svg")),
                   Icon(Icons.more_vert, color: Colors.purple)
                 ],
               ),
@@ -94,7 +94,9 @@ class ProgressLine extends StatelessWidget {
               color:color,
               borderRadius: BorderRadius.all(Radius.circular(10))
             ),
-          )))
+          )
+          )
+          )
       ],
     );
   }

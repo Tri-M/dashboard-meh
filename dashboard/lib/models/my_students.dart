@@ -1,8 +1,10 @@
 import "package:flutter/material.dart";
 import "package:dashboard/constants.dart";
+import 'package:flutter_svg/flutter_svg.dart';
 
 class StudentInfo {
-  final String? svgSrc, title, totalStudents;
+  final String? title, totalStudents;
+  final Widget? svgSrc;
   final int? no_of_students, percentage;
   final Color? color;
 
@@ -20,21 +22,21 @@ List myStudents = [
   StudentInfo(
       title: "5-7 years",
       no_of_students: 23,
-      svgSrc: "assets/images/profile.png",
+      svgSrc:SvgPicture.network("assets/icons/user.svg"),
       totalStudents: "50",
       color: primaryColor,
       percentage: 35),
   StudentInfo(
       title: "8-10 years",
       no_of_students: 23,
-      svgSrc: "assets/images/profile.png",
+      svgSrc:SvgPicture.network("assets/icons/user.svg"),
       totalStudents: "",
       color: primaryColor,
       percentage: 35),
   StudentInfo(
       title: "11-13 years",
       no_of_students: 23,
-      svgSrc: "assets/icons/profile.svg",
+      svgSrc:SvgPicture.network("assets/icons/user.svg"),
       totalStudents: "",
       color: primaryColor,
       percentage: 35),
